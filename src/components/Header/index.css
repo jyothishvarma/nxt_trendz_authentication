@@ -1,0 +1,103 @@
+/* Write your CSS code here */
+
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 15vh;
+  width: 70%;
+  align-items: center;
+}
+.website-logo-image {
+  height: 50px;
+}
+.routes-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 60%;
+  list-style-type: none;
+}
+.routes-and-button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #0967d2;
+  height: 36px;
+  width: 100px;
+  border: 0;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.nav-link {
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+  color: #475569;
+}
+
+.nav-logout-mobile-icon {
+  display: none;
+}
+
+.routes-mobile-container {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-header {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    height: 15vh;
+    margin-top: 30px;
+  }
+  .logout-btn {
+    height: 28px;
+    width: 80px;
+    font-size: 12px;
+  }
+  .website-logo-image {
+    height: 30px;
+  }
+  .routes-and-button-container {
+    display: none;
+  }
+  .nav-logout-mobile-icon {
+    display: inline;
+  }
+  .routes-mobile-container {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-logout-mobile-icon {
+    height: 30px;
+  }
+  .website-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .routes-mobile-container {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #e6f6ff;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nav-mobile-icons {
+    height: 30px;
+  }
+}

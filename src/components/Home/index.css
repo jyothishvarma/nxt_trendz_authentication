@@ -1,0 +1,91 @@
+/* Write your CSS code here */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 48px;
+  width: 70%;
+}
+.home-page-details-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  text-align: left;
+}
+.home-heading {
+  font-family: roboto;
+  font-weight: bolder;
+  color: #1e293b;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.home-description {
+  color: #64748b;
+  font-family: roboto;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.shop-btn {
+  background-color: #0967d2;
+  color: #ffffff;
+  border: 0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: roboto;
+  height: 50px;
+  width: 200px;
+}
+.home-desktop-image {
+  height: 500px;
+}
+
+.home-mobile-image {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  .home-desktop-image {
+    display: none;
+  }
+  .home-mobile-image {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .home-mobile-image {
+    height: 280px;
+    width: 80%;
+    margin: auto;
+  }
+  .home-heading {
+    font-size: 36px;
+  }
+  .home-description {
+    font-size: 16px;
+  }
+  .home-page-details-container {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+  }
+  .shop-btn {
+    margin: auto;
+    height: 40px;
+    width: 160px;
+  }
+}
